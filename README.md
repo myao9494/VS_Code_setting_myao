@@ -40,7 +40,7 @@ VS code のセットアップを纏めます
 ```json
 {
   "window.zoomLevel": -1,
-  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreview": false, // ファイルを開いた時にタブが上書きされる問題を回避
   "git.autofetch": true,
   "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
   "vsnotes.defaultNotePath": "ここにパスを入れる",
@@ -134,6 +134,10 @@ ctrl+shift+p を押し、 Markdown Preview Enhanced: Customize Css を開く
     color: rgb(255, 255, 255);
     line-height: 1.8em;
   }
+  p {
+    padding-left: 1em;
+  }
+
   body {
     counter-reset: chapter;
   }
@@ -141,8 +145,8 @@ ctrl+shift+p を押し、 Markdown Preview Enhanced: Customize Css を開く
     counter-reset: sub-chapter;
     font-size: 15pt;
     padding: 0.4em 0.5em; /*文字の上下 左右の余白*/
-    color: #494949; /*文字色*/
-    background: #f4f4f4; /*背景色*/
+    color: #000000; /*文字色*/
+    background: #3780df; /*背景色*/
     border-left: solid 5px #7db4e6; /*左線*/
     border-bottom: solid 3px #d7d7d7; /*下線*/
   }
@@ -151,7 +155,7 @@ ctrl+shift+p を押し、 Markdown Preview Enhanced: Customize Css を開く
     font-size: 14pt;
     position: relative;
     padding: 0.4em;
-    background: #8cb1d5;
+    background: #c5c5c5;
     color: rgb(0, 0, 0);
   }
   h2::before {
@@ -163,7 +167,7 @@ ctrl+shift+p を押し、 Markdown Preview Enhanced: Customize Css を開く
     font-size: 13pt;
     position: relative;
     padding: 0.3em;
-    background: #fcfbda;
+    background: #a72a2a;
     color: rgb(0, 0, 0);
   }
   h3::before {
@@ -177,7 +181,8 @@ ctrl+shift+p を押し、 Markdown Preview Enhanced: Customize Css を開く
   }
   h4::before {
     counter-increment: sub-section;
-    content: counter(sub-chapter) "." counter(section) "." counter(sub-section) ".";
+    content: counter(sub-chapter) "." counter(section) "." counter(sub-section)
+      ".";
   }
   h5 {
     counter-reset: sub-sub-sub-section;
@@ -186,8 +191,9 @@ ctrl+shift+p を押し、 Markdown Preview Enhanced: Customize Css を開く
   }
   h5::before {
     counter-increment: sub-sub-section;
-    content: counter(sub-chapter) "." counter(section) "." counter(sub-section) "."
-      counter(sub-sub-section) ".";
+    content: counter(sub-chapter) "." counter(section) "." counter(sub-section)
+      "." counter(sub-sub-section) ".";
   }
 }
+
 ```
