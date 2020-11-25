@@ -43,6 +43,16 @@ VS code のセットアップを纏めます
   "workbench.editor.enablePreview": false, // ファイルを開いた時にタブが上書きされる問題を回避
   "git.autofetch": true,
   "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+  "[markdown]": {
+      // "editor.fontFamily": "Cambria, 游明朝",
+      "editor.lineHeight": 24,
+      "editor.fontSize": 14,
+  },
+  "pasteImage.namePrefix": "${currentFileNameWithoutExt}_",// デフォルトのファイル名の頭にmarkdown名をつける
+  "pasteImage.path": "${currentFileDir}/image/${currentFileNameWithoutExt}/",//(markdownファイルのディレクトリ内)/img内に画像を保存
+  "pasteImage.prefix":"./", //pathの調整
+  "pasteImage.showFilePathConfirmInputBox":true,// ペースト時にファイル名を変更する
+  "pasteImage.filePathConfirmInputBoxMode":"onlyName",
   "vsnotes.defaultNotePath": "ここにパスを入れる",
   "vsnotes.noteTitleConvertSpaces": " ",
   "vsnotes.defaultNoteTitle": "{dt} {title}.{ext}",
@@ -146,7 +156,7 @@ ctrl+shift+p を押し、 Markdown Preview Enhanced: Customize Css を開く
     font-size: 15pt;
     padding: 0.4em 0.5em; /*文字の上下 左右の余白*/
     color: #000000; /*文字色*/
-    background: #3780df; /*背景色*/
+    background: #b91f1f; /*背景色*/
     border-left: solid 5px #7db4e6; /*左線*/
     border-bottom: solid 3px #d7d7d7; /*下線*/
   }
@@ -167,7 +177,7 @@ ctrl+shift+p を押し、 Markdown Preview Enhanced: Customize Css を開く
     font-size: 13pt;
     position: relative;
     padding: 0.3em;
-    background: #a72a2a;
+    background: #4b8020;
     color: rgb(0, 0, 0);
   }
   h3::before {
