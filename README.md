@@ -39,54 +39,55 @@ VS code のセットアップを纏めます
 
 ```json
 {
-  "window.zoomLevel": -1,
-  "workbench.editor.enablePreview": false, // ファイルを開いた時にタブが上書きされる問題を回避
-  "git.autofetch": true,
-  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
-  "[markdown]": {
-      // "editor.fontFamily": "Cambria, 游明朝",
-      "editor.lineHeight": 24,
-      "editor.fontSize": 14,
-  },
-  "pasteImage.namePrefix": "${currentFileNameWithoutExt}_",// デフォルトのファイル名の頭にmarkdown名をつける
-  "pasteImage.path": "${currentFileDir}/image/${currentFileNameWithoutExt}/",//(markdownファイルのディレクトリ内)/img内に画像を保存
-  "pasteImage.prefix":"./", //pathの調整
-  "pasteImage.showFilePathConfirmInputBox":true,// ペースト時にファイル名を変更する
-  "pasteImage.filePathConfirmInputBoxMode":"onlyName",
-  "vsnotes.defaultNotePath": "ここにパスを入れる",
-  "vsnotes.noteTitleConvertSpaces": " ",
-  "vsnotes.defaultNoteTitle": "{dt} {title}.{ext}",
-  "vsnotes.tokens": [
+    "window.zoomLevel": -1,
+    "workbench.editor.enablePreview": false,
+    "git.autofetch": true,
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+    "[markdown]": {
+        // "editor.fontFamily": "Cambria, 游明朝",
+        "editor.lineHeight": 24,
+        "editor.fontSize": 14,
+    },
+    "pasteImage.namePrefix": "${currentFileNameWithoutExt}_",// デフォルトのファイル名の頭にmarkdown名をつける
+    "pasteImage.path": "${currentFileDir}/image/${currentFileNameWithoutExt}/",//(markdownファイルのディレクトリ内)/img内に画像を保存
+    "pasteImage.prefix":"./", //pathの調整
+    "pasteImage.showFilePathConfirmInputBox":true,// ペースト時にファイル名を変更する
+    "pasteImage.filePathConfirmInputBoxMode":"onlyName",
+    "vsnotes.defaultNotePath": "ここにパスを入れる",
+    "vsnotes.noteTitleConvertSpaces": " ",
+    "vsnotes.defaultNoteTitle": "{title}.{ext}",
+    "vsnotes.tokens": [
     {
-      "type": "datetime",
-      "token": "{dt}",
-      "format": "YYYY-MM-DD",
-      "description": "Insert formatted datetime."
+        "type": "title",
+        "token": "{title}",
+        "description": "Insert note title from input box.",
+        "format": "Untitled"
     },
     {
-      "type": "title",
-      "token": "{title}",
-      "description": "Insert note title from input box.",
-      "format": "Untitled"
-    },
-    {
-      "type": "extension",
-      "token": "{ext}",
-      "description": "Insert file extension.",
-      "format": "md"
+        "type": "extension",
+        "token": "{ext}",
+        "description": "Insert file extension.",
+        "format": "md"
     }
-  ],
-  "vsnotes.templates": ["base"],
-  "markdown-preview-enhanced.enableExtendedTableSyntax": true,
-  "markdown-preview-enhanced.enableScriptExecution": true,
-  "markdown.preview.breaks": true,
-  "markdown.extension.orderedList.marker": "one",
-  "markdown.extension.orderedList.autoRenumber": false,
-  "markdown.extension.syntax.decorations": false,
-  "markdown.extension.tableFormatter.enabled": false,
-  "markdown-preview-enhanced.codeBlockTheme": "dark.css",
-  "markdown-preview-enhanced.revealjsTheme": "black.css",
-  "markdown-preview-enhanced.previewTheme": "github-dark.css"
+    ],
+    "vsnotes.templates": [
+        "base",
+      ],
+    "markdown-preview-enhanced.enableExtendedTableSyntax": true,
+    "markdown-preview-enhanced.enableScriptExecution": true,
+    "markdown.preview.breaks": true,
+    "markdown.extension.orderedList.marker": "one",
+    "markdown.extension.orderedList.autoRenumber": false,
+    "markdown.extension.syntax.decorations": false,
+    "markdown.extension.tableFormatter.enabled": false,
+    "markdown-preview-enhanced.codeBlockTheme": "dark.css",
+    "markdown-preview-enhanced.revealjsTheme": "black.css",
+    "markdown-preview-enhanced.previewTheme": "github-dark.css",
+    "workbench.iconTheme": "vscode-icons",
+    "[css]": {
+        "editor.defaultFormatter": "aeschli.vscode-css-formatter"
+    },
+    "vscodeGoogleTranslate.preferredLanguage": "Japanese",
 }
 ```
 
