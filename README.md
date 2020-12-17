@@ -42,7 +42,6 @@ VS code のセットアップを纏めます
   "window.zoomLevel": -1,
   "workbench.editor.enablePreview": false,
   "git.autofetch": true,
-  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
   "[markdown]": {
     // "editor.fontFamily": "Cambria, 游明朝",
     "editor.lineHeight": 24,
@@ -85,7 +84,8 @@ VS code のセットアップを纏めます
   "[css]": {
     "editor.defaultFormatter": "aeschli.vscode-css-formatter"
   },
-  "vscodeGoogleTranslate.preferredLanguage": "Japanese"
+  "vscodeGoogleTranslate.preferredLanguage": "Japanese",
+  "editor.formatOnSave": true
 }
 ```
 
