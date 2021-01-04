@@ -20,12 +20,12 @@ VS code のセットアップを纏めます
 - Edit csv
 - Python Docstring Generator
 - SandDance for VSCode
-- Excel to Markdown table
 - Paste Image
 - python Docstring Generator
 - SandDance for VSCode
 - Edit csv
 - vscode-icons
+- Markdown Extended
 
 ## 設定ファイル
 
