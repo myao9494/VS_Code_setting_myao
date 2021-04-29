@@ -21,10 +21,6 @@ VS code のセットアップを纏めます
 - Python Docstring Generator
 - SandDance for VSCode
 - Paste Image
-- python Docstring Generator
-- SandDance for VSCode
-- Edit csv
-- vscode-icons
 - Markdown Extended
 
 ## 設定ファイル
