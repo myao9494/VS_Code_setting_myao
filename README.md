@@ -269,3 +269,32 @@ ctrl+shift+p を押し、 Markdown Preview Enhanced: Customize Css を開く
   }
 }
 ```
+
+## keybinding
+
+vscode で、キーバインドを変更するには、 keybindings.json を編集
+コマンドパレットで、`keyboard shortcuts`と打って、編集
+
+- for mac
+
+```
+[
+  {
+    "command": "markdown-preview-enhanced.openPreviewToTheSide",
+    "key": "cmd+alt+v",
+    "when": "editorLangId == markdown"
+  },
+]
+```
+
+for win
+
+```
+[
+    {
+      "command": "markdown-preview-enhanced.openPreviewToTheSide",
+      "key": "ctrl+alt+v",
+      "when": "editorLangId == markdown"
+    },
+  ]
+```
